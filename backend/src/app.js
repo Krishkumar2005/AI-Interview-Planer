@@ -6,7 +6,10 @@ const app = express()
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors())
+app.use(cors({
+    origin: "ai-interview-planer.vercel.app",
+    credentials: true
+}))
 
 /* require all the routes here */
 const authRouter = require("./routes/auth.routes")
