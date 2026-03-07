@@ -6,9 +6,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-    origin: "*",
-}))
+app.use(cors())
 
 /* require all the routes here */
 const authRouter = require("./routes/auth.routes")
