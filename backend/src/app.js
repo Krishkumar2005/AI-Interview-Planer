@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "ai-interview-planer.vercel.app",
     credentials: true
 }))
 
